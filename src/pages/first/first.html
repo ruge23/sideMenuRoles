@@ -1,0 +1,44 @@
+
+<ion-header>
+
+  <ion-navbar hideBackButton>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="login-content" padding>
+  <ion-row class="top-row">
+    <ion-col>
+      <h1 class="label-logo profile-image">FACE ID</h1>
+        <p class="label-description"></p>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="login-button">
+      <button ion-button block color="danger" (click)="goTointerLogin()">Google</button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="login-button">
+      <button ion-button block color="facebook" (click)="goTointerLogin()">Facebook</button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="login-button">
+      <button ion-button block color="linkedin" (click)="goTointerLogin()">Linkedin</button>
+    </ion-col>
+  </ion-row>
+</ion-content>
+    <ion-footer>
+      <ion-grid>
+        <ion-row>
+          <ion-col align-self-start>
+            <div>Actualizar perfil</div>
+          </ion-col>
+          <ion-col align-self-end>
+            <div style="text-align: end;">Iniciar con mi usuario</div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-footer>

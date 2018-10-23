@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Estado de Cuentas</ion-title>
+  </ion-navbar>
+ 
+</ion-header>
+ 
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-badge color="secondary">
+        Capital solicitado: $ x.xxx,xx
+      </ion-badge>
+    </ion-card-header>
+    <ion-card-content style="padding: 0px;">
+      <ion-row>
+        <ion-col with-66>
+          <div float-left>
+            Proxima cuota a vencer:
+          </div>
+        </ion-col>
+        <ion-col>
+          <div float-right>
+            dd/mm/aaaa
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div float-left>
+            Monto proxima Cuota:
+          </div>
+        </ion-col>
+        <ion-col>
+          <div float-right>
+            $ x.xxx,xx
+          </div>
+        </ion-col>
+        </ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Detalle de Cuenta
+    </ion-card-header>
+      <ion-row>
+          <ion-col>
+            <strong>Cuota</strong>
+          </ion-col>
+          <ion-col>
+            <strong>Vencimiento</strong>
+          </ion-col>
+          <ion-col>
+            <strong>Monto</strong>
+          </ion-col>
+          <ion-col>
+            <strong>Detalle</strong>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngFor="let couta of [1,2,3,4,5,6,7,8,9]">
+          <ion-col class="detalle">
+            {{couta}}
+          </ion-col>
+          <ion-col class="detalle">
+            dd/mm/aaaa
+          </ion-col>
+          <ion-col class="detalle">
+            $ x.xxx,xx
+          </ion-col>
+          <ion-col class="detalle">
+            +
+          </ion-col>
+        </ion-row>
+    </ion-card>
+</ion-content>

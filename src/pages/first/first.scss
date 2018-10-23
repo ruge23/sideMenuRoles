@@ -1,0 +1,37 @@
+page-first {
+    .login-content{
+        background-color: map-get($colors, light )
+    }
+    
+    .label-logo{
+        color: black;
+        font-size: 300%;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 70px;
+    }
+    
+    .label-description{
+        color: black;
+        font-size: 130%;
+        text-align: center;
+    }
+    
+    .top-row{
+        height: 60%;
+    }
+    
+    .profile-image{
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        //margin-top: 50px;
+        //margin-bottom: 30px;
+        border: 1px solid black;
+    }
+
+    .footer::before{
+        background-image: none !important;
+    }
+}
